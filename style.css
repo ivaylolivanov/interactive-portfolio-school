@@ -3,6 +3,20 @@ h1
     color: red;
 }
 
+html
+{
+    margin:  0;
+    padding: 0;
+    scrollbar-width: none;
+}
+
+body
+{
+    margin:  0;
+    padding: 0;
+    height: 300vh;
+}
+
 .circle-border
 {
     width: 10em;
