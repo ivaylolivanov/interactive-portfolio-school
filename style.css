@@ -23,3 +23,10 @@ body
     border: 1px solid red;
     border-radius: 50%;
 }
+
+#avatar
+{
+    bottom:   2em;
+    left:     2em;
+    position: fixed;
+}
