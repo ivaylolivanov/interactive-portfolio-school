@@ -29,4 +29,12 @@ body
     bottom:   2em;
     left:     2em;
     position: fixed;
+
+    animation: bobbing 1s ease-in-out infinite alternatex;
+}
+
+@keyframes bobbing
+{
+    from { transform: translateY(0); }
+    to   { transform: translateY(-10px); }
 }

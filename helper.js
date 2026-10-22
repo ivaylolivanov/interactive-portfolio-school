@@ -1,14 +1,13 @@
+const avatar = document.getElementById("avatar");
+
 document.addEventListener("scroll", (event) =>
 {
-    const avatar = document.getElementById("avatar");
     var positionY = window.scrollY;
-    var max = document.body.scrollHeight;
-    var progress = positionY / max;
+    var maxHeight = document.body.scrollHeight - window.innerHeight;
+    var maxWidth  = window.innerWidth - avatar.offsetWidth;
+    var progress  = (positionY / maxHeight) * maxWidth;
 
-    avatar.style.left = positionY + "px";
-    console.log(avatar);
-
-    console.log(positionY + " / " + max + " = " + progress);
+    avatar.style.left = progress + "px";
 });
 
 document.addEventListener("keydown", (event) =>
