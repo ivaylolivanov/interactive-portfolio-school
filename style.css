@@ -24,6 +24,11 @@ body
     border-radius: 50%;
 }
 
+.face-right
+{
+    scale: -1 1;
+}
+
 #avatar
 {
     bottom:   2em;
