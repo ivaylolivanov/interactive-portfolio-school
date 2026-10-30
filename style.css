@@ -14,7 +14,6 @@ body
 {
     margin:  0;
     padding: 0;
-    height: 300vh;
 }
 
 .circle-border
@@ -42,4 +41,17 @@ body
 {
     from { transform: translateY(0); }
     to   { transform: translateY(-10px); }
+}
+
+main
+{
+    display: flex;
+}
+
+section
+{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
 }

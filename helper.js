@@ -4,10 +4,10 @@ var pastProgress = 0;
 
 document.addEventListener("scroll", (event) =>
 {
-    var positionY = window.scrollY;
-    var maxHeight = root.scrollHeight - window.innerHeight;
-    var maxWidth  = window.innerWidth - avatar.offsetWidth;
-    var progress  = (positionY / maxHeight) * maxWidth;
+    var positionX   = window.scrollX;
+    var screenWidth = root.scrollWidth - window.innerWidth;
+    var maxWidth    = window.innerWidth - avatar.offsetWidth;
+    var progress    = (positionX / screenWidth) * maxWidth;
 
     if (progress < pastProgress)
         avatar.classList.remove("face-right");
