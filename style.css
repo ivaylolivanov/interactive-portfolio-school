@@ -14,6 +14,12 @@ body
 {
     margin:  0;
     padding: 0;
+    background-image:
+        url("images/layer-village.png"),
+        url("images/layer-mountains.png");
+    background-repeat: repeat-x;
+    background-size: auto 100vh;
+    background-attachment: fixed;
 }
 
 .circle-border
@@ -33,6 +39,7 @@ body
     bottom:   2em;
     left:     2em;
     position: fixed;
+    clip: rect(0, 224px, 320px, 0);
 
     animation: bobbing 1s ease-in-out infinite alternate;
 }
@@ -52,6 +59,5 @@ section
 {
     width: 100vw;
     height: 100vh;
-    background-size: cover;
     flex-shrink: 0;
 }

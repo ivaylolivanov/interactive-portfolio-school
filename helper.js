@@ -2,6 +2,8 @@ const avatar = document.getElementById("avatar");
 const root   = document.documentElement;
 var pastProgress = 0;
 
+const paralaxSpeeds = [0.2, 0.45];
+
 document.addEventListener("scroll", (event) =>
 {
     var positionX   = window.scrollX;
