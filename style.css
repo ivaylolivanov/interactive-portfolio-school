@@ -39,7 +39,6 @@ body
     bottom:   2em;
     left:     2em;
     position: fixed;
-    clip: rect(0, 224px, 320px, 0);
 
     animation: bobbing 1s ease-in-out infinite alternate;
 }
