@@ -2,7 +2,7 @@ const avatar = document.getElementById("avatar");
 const root   = document.documentElement;
 var pastProgress = 0;
 
-const paralaxSpeeds = [0.65, 0.35];
+const paralaxSpeeds = [0.65, 0.35, 0.25];
 
 document.addEventListener("scroll", (event) =>
 {
