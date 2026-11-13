@@ -17,7 +17,8 @@ body
     background-image:
         url("images/layer-clouds.png"),
         url("images/layer-village.png"),
-        url("images/layer-mountains.png");
+        url("images/layer-mountains.png"),
+        url("images/layer-sky.png");
     background-repeat: repeat-x;
     background-size: auto 100vh;
     background-attachment: fixed;
@@ -60,4 +61,14 @@ section
     width: 100vw;
     height: 100vh;
     flex-shrink: 0;
+}
+
+#about-me .section-content
+{
+    background-image: url("images/section-bg.png");
+    width: 30%;
+    height: 40%;
+    position: relative;
+    left: 20%;
+    top: 20%;
 }
