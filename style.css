@@ -65,10 +65,25 @@ section
 
 #about-me .section-content
 {
-    background-image: url("images/section-bg.png");
-    width: 30%;
-    height: 40%;
+    background: url("images/section-bg.png") center / 100% 100% no-repeat;
+    aspect-raito: 16 / 9;
+    width: 35%;
+    box-sizing: border-box;
+    padding: 6% 13%;
+    height: 60%;
     position: relative;
     left: 20%;
     top: 20%;
+
+    font-family: "Georgia", serif;
+    text-align: center;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+#about-me .section-content
+{
+    margin-top: 0;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #5a3a1a;
 }
