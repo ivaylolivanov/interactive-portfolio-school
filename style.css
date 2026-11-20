@@ -15,8 +15,8 @@ body
     margin:  0;
     padding: 0;
     background-image:
-        url("images/layer-clouds.png"),
         url("images/layer-village.png"),
+        url("images/layer-clouds.png"),
         url("images/layer-mountains.png"),
         url("images/layer-sky.png");
     background-repeat: repeat-x;
@@ -38,9 +38,12 @@ body
 
 #avatar
 {
-    bottom:   2em;
+    bottom:   0em;
     left:     2em;
     position: fixed;
+
+    height: 200px;
+    width: auto;
 
     animation: bobbing 1s ease-in-out infinite alternate;
 }
@@ -63,27 +66,41 @@ section
     flex-shrink: 0;
 }
 
-#about-me .section-content
+#about-me
 {
-    background: url("images/section-bg.png") center / 100% 100% no-repeat;
-    aspect-raito: 16 / 9;
-    width: 35%;
-    box-sizing: border-box;
-    padding: 6% 13%;
-    height: 60%;
-    position: relative;
-    left: 20%;
-    top: 20%;
-
-    font-family: "Georgia", serif;
-    text-align: center;
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #about-me .section-content
 {
+    background: url("images/section-bg.png") center / 100% 100% no-repeat;
+    width: 60%;
+    aspect-ratio: 1672 / 941;
+
+    box-sizing: border-box;
     margin-top: 0;
+    padding: 8% 14%;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Georgia", serif;
+    text-align: center;
     font-variant: small-caps;
     letter-spacing: 0.1em;
-    border-bottom: 2px solid #5a3a1a;
+
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+#about-me h2
+{
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+#about-me p
+{
+    margin-bottom: auto;
 }
